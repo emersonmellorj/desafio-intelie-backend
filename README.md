@@ -65,3 +65,16 @@ Resultado esperado para este exemplo (mas não precisa ser nessa ordem):
 ]
 ```
 
+# Solução do desafio:
+
+Para realizar o processamento dos dados, separei cada parte deste processamento em funções. São elas:
+- __main__: função principal do sistema, ela é coração do projeto;
+- __parse_facts__: Através desta função irei varrer o array facts para processar os dados, gerando uma nova lista;
+- __exist_fact_result__: Nesta função irei verificar se o fato que estou lendo já existe dentro da nova lista gerada. Neste caso para deletar o registro ou adicionar o mesmo na nova lista;
+- __delete_exist_fact_result__: Deleta o registro da nova lista de resultados, se encontrar (func chamada quando existe um fact=False na lista original)
+- __del_fact_in_result__: Deleta um registro da nova lista de resultados;
+- __add_fact_in_result__: Adiciona um fato na nova lista de resultados.
+
+Essa foi a melhor solução que encontrei para o desafio.
+
+
